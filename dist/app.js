@@ -11,6 +11,13 @@ btn.addEventListener("click", function() {
   sidebar.classList.toggle("slide")
 })
 
+sidebar.addEventListener("click", function(e) {
+  // this.classList.toggle("active")
+  // sidebar.style.display = "flex"
+  // let sidebarLinks = e.target()
+  this.classList.toggle("slide")
+})
+
 
 tl.from(".slide-down", {
   y: "-30%",
