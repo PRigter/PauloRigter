@@ -1,20 +1,14 @@
 gsap.registerPlugin(ScrollTrigger)
 const tl = gsap.timeline()
 
-
 const btn = document.querySelector(".fa-bars")
 const sidebar = document.querySelector(".sidebar")
 
 btn.addEventListener("click", function() {
-  // this.classList.toggle("active")
-  // sidebar.style.display = "flex"
   sidebar.classList.toggle("slide")
 })
 
 sidebar.addEventListener("click", function(e) {
-  // this.classList.toggle("active")
-  // sidebar.style.display = "flex"
-  // let sidebarLinks = e.target()
   this.classList.toggle("slide")
 })
 
